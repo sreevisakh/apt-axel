@@ -7,7 +7,7 @@ import os
 if len(sys.argv)>1:
 	packagename = sys.argv[1]
 else:
-	print "Usage: ./apt-web packagename"
+	print "Usage: ./apt-axel packagename"
 	exit(0)
 deps = []
 apt = sp.Popen(['apt-get','-y','--print-uris','install',packagename],stdout = sp.PIPE)
